@@ -1,5 +1,213 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif;
+  color: #FAFAFA;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 250% 250%;
+	animation: Gradient 120s ease infinite;
 }
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header {
+  display: flex;  
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  background: linear-gradient(rgb(75, 75, 75), rgb(85, 85, 85), rgb(75, 75, 75));
+  border-radius: 5px;  
+  border-bottom: solid 1px rgb(50, 50, 50);
+}
+
+.brand {
+  text-decoration: none;
+  color: white;
+  margin: 2px;
+  border: 1px red;
+  border-style: dotted;
+}
+
+.brand > a {
+  text-decoration: none;
+  color: white;
+}
+
+.log-out {
+  margin: 2px;
+  border: 1px red;
+  border-style: dotted;  
+}
+
+.control-panel {
+  flex-direction: column;
+  width: 33%;
+  margin: 10px;
+  background-color: rgba(50, 75, 75, 0.75);
+  border: 1px red;
+  border-style: dotted;
+  border-radius: 15px;
+  padding: 5px 5px;
+}
+
+.h1 {
+  text-align: center;
+  border: 1px red;
+  border-style: dotted;
+  padding: 5px 5px;
+}
+
+.headings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(225, 60, 0, 0.75);
+  border: 1px red;
+  border-style: dotted;
+  padding: 5px 5px;
+}
+
+.team {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px red;
+  border-style: dotted;
+  padding: 5px 5px;
+}
+
+.team-name {
+  border: 1px red;
+  border-style: dotted;
+  width: 25%;
+  padding: 5px 5px;
+}
+
+.enter {
+  border: 1px red;
+  border-style: dotted;  
+}
+
+.score {
+  border: 1px red;
+  border-style: dotted;
+  width: 15%;
+  padding: 5px 5px;
+}
+
+.del {
+  border: 1px red;
+  border-style: dotted;
+  width: 10%;
+  padding: 5px 5px;
+}
+
+.score-keeper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px red;
+  border-style: dotted;
+  width: 15%;
+  padding: 5px 5px;
+}
+
+.plus_and_minus {
+  border: 1px red;
+  border-style: dotted;
+  padding: 10px 10px;
+}
+
+.scorebox {
+  color: white;
+  width: 20px;
+  border: 1px red;
+  border-style: dotted;
+  padding: 5px 5px;
+}
+
+.scorebox > input {
+  width: 20px;
+}
+
+.checkbox {
+  border: 1px red;
+  border-style: dotted;
+  padding: 5px 5px;
+}
+
+.start-game > * {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px red;
+  border-style: dotted;
+  padding: 5px 5px;
+  margin: 10px 10px;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;  
+  width: 15%;
+  margin: 10px;
+  background-color: rgba(50, 75, 75, 0.75);
+  border: 1px red;
+  border-style: dotted;
+  border-radius: 15px;
+  padding: 5px 5px;
+}
+
+.timer-display {
+  border: 1px red;
+  border-style: dotted;
+  padding: 5px 5px;
+}
+
+.timer-display > input {
+  font-size: 30px;  
+  height: 40px;
+  width: 50px;
+  margin: 2px;
+}
+
+.timer-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px red;
+  border-style: dotted;
+  padding: 5px 5px;
+}
+
+.timer-buttons > * {
+  margin: 5px;
+}  
+
+.CRUDL_Menu {
+  border: 1px red;
+  border-style: dotted;
+  padding: 5px 5px;
+}
+
